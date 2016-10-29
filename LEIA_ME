@@ -1,0 +1,5 @@
+Para rodar esse projeto faça uma venv com os pacotes especificados em 'pip freeze'
+
+O arquivo 'comandos para usar no prompt' é uma sumário com os comandos que serão necessário para criar e aplicar os arquivos de tradução ao projeto.
+
+O 'settings.py' está comentado nas partes que precisam ser adicionadas. 
