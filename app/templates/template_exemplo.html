@@ -1,0 +1,21 @@
+{% load i18n %}
+<!--{% get_current_language as lang %}-->
+
+<ul>
+    <li>
+        <a href="/pt-br/"> Link pt-br </a>
+    </li>
+    <li>
+        <a href="/en/"> Link en </a>
+    </li>
+</ul>
+
+<hr>
+
+<p>{% trans "Texto qualquer em português" %}</p>
+
+{% for exemplo in exemplo_no_contexto %}
+{% if exemplo.lang == LANGUAGE_CODE %}
+<p>{{ exemplo.conteudo }}</p>
+{% endif %}
+{% endfor %}

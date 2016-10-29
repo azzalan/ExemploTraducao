@@ -1,0 +1,27 @@
+
+Atenção, se você usar windows tem que instalar isso: https://docs.djangoproject.com/pt-br/1.10/topics/i18n/translation/#gettext-on-windows
+
+______________________________________________________________________________________________
+
+
+Primeiro crie a pasta '/locale/(código da língua)/' no seu projeto
+(ex: '/locale/en/' )
+
+Depois use esse comando para criar o arquivo de tradução:
+
+django-admin makemessages--locale=(código da língua)
+ex: 
+django-admin makemessages--locale=en
+
+Doc: https://docs.djangoproject.com/pt-br/1.10/ref/django-admin/#django-admin-makemessages
+
+
+______________________________________________________________________________________________
+
+Preencha as traduções no arquivo django.po, e sempre que quiser aplicar essas tradução no projeto use:
+
+django-admin compilemessages
+
+https://docs.djangoproject.com/pt-br/1.10/topics/i18n/translation/#compiling-message-files
+
+
